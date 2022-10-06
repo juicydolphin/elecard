@@ -9,6 +9,7 @@
     width: 245px;
     height: 138px;
     border: #1390E5 1px solid;
+    border-radius: 10px;
 }
 .gridItemDataBlock{
     display: flex;
@@ -17,6 +18,9 @@
 }
 .gridItemData{
     font-family: Roboto,sans-serif;
+}
+.gridItemMainData{
+    font-weight: bold;
 }
 .delete{
     display: flex;
