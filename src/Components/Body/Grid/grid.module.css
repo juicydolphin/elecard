@@ -1,0 +1,29 @@
+.gridWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gridContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.paginatorContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+    font-family: Roboto,sans-serif;
+}
+.linkButton{
+    background-color: #1390E5;
+    border-radius: 20px;
+    color: white;
+    padding: 2px 15px;
+}
+.active{
+    color: #1390E5;
+    font-weight: bold;
+}

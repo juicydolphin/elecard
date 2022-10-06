@@ -1,0 +1,24 @@
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 245px;
+    height: 226px;
+}
+.gridImage{
+    width: 245px;
+    height: 138px;
+    border: #1390E5 1px solid;
+}
+.gridItemDataBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.gridItemData{
+    font-family: Roboto,sans-serif;
+}
+.delete{
+    display: flex;
+    flex-direction: row-reverse;
+}
