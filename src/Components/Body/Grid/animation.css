@@ -1,0 +1,17 @@
+.animation-enter {
+    opacity: 0.01;
+}
+
+.animation-enter.animation-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.animation-leave {
+    opacity: 1;
+}
+
+.animation-leave.animation-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

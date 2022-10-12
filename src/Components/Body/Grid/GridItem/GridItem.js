@@ -17,7 +17,7 @@ const GridItem = (props) => {
     return (
         <div className={s.gridItem}>
             <div className={s.delete}>
-                <button onClick={() => props.deleteCard(props.image) }>x</button>
+                <div className={s.deleteButton} onClick={() => props.deleteCard(props.image)}><button/></div>
             </div>
             <img className={s.gridImage} src={baseUrl+props.image}/>
             <div className={s.gridItemDataBlock}>

@@ -26,3 +26,17 @@
     display: flex;
     flex-direction: row-reverse;
 }
+.deleteButton{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    -webkit-mask-image: url("../../../../assets/img/delete.svg");
+    background-size: cover;
+    transition: 0.1s;
+}
+.deleteButton:hover{
+    background: #1390E5;
+    transition: 0.1s;
+    transform: scale(1.2);
+}

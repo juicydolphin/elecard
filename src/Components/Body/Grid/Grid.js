@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import s from './grid.module.css'
+import './animation.css'
 import GridItem from "./GridItem/GridItem";
 import ReactPaginate from "react-paginate";
 import useLocalStorage from "../../../hooks/useLocalStorage";
+
 
 const Grid = (props) => {
 
@@ -133,14 +135,17 @@ const Grid = (props) => {
                     <option value={"descendingDate"}>По убыванию</option>
                     <option value={"ascendingDate"}>По возрастанию</option>
                 </select>
-                <button onClick={reset}>Сброс</button>
+                <button className={s.resetButton} onClick={reset}>Сброс</button>
             </form>
+
             <div className={s.gridContainer}>
+
                 {currentItems.map((d, i) => <GridItem image={d.image} filesize={d.filesize} timestamp={d.timestamp}
                                                       category={filtrationParams.categories.filter(category => category.key === d.category)}
                                                       key={i} del id={i} deleteCard={deleteCard}/>)}
 
             </div>
+
             <ReactPaginate
                 breakLabel="..."
                 nextLabel="Далее"
