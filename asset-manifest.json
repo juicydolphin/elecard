@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/elecard/static/css/main.d54baf78.css",
+    "main.js": "/elecard/static/js/main.76e2cb01.js",
+    "static/js/787.809de518.chunk.js": "/elecard/static/js/787.809de518.chunk.js",
+    "static/media/logo.png": "/elecard/static/media/logo.1a020faf4a2fea0bb1e9.png",
+    "index.html": "/elecard/index.html",
+    "static/media/preloader.svg": "/elecard/static/media/preloader.2fd3f6077147c6940f79a5041b588b34.svg",
+    "static/media/delete.svg": "/elecard/static/media/delete.eb00f82c19ff7e97a1cd.svg",
+    "main.d54baf78.css.map": "/elecard/static/css/main.d54baf78.css.map",
+    "main.76e2cb01.js.map": "/elecard/static/js/main.76e2cb01.js.map",
+    "787.809de518.chunk.js.map": "/elecard/static/js/787.809de518.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54baf78.css",
+    "static/js/main.76e2cb01.js"
+  ]
+}
