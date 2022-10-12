@@ -27,3 +27,14 @@
     color: #1390E5;
     font-weight: bold;
 }
+.selector{
+    font-family: Roboto, sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.selector p {
+    font-weight: bold;
+}

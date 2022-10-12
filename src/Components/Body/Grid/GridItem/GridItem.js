@@ -3,6 +3,7 @@ import s from './gridItem.module.css'
 let baseUrl = "http://contest.elecard.ru/frontend_data/"
 
 const GridItem = (props) => {
+
     let toDate = (timestamp) => {
         let date = new Date()
         date.setTime(timestamp)
@@ -12,16 +13,17 @@ const GridItem = (props) => {
         filesize = filesize/1024
         return filesize.toFixed()+" Кб"
     }
+
     return (
         <div className={s.gridItem}>
             <div className={s.delete}>
-                <button>x</button>
+                <button onClick={() => props.deleteCard(props.image) }>x</button>
             </div>
             <img className={s.gridImage} src={baseUrl+props.image}/>
             <div className={s.gridItemDataBlock}>
                 <p className={s.gridItemData}>Размер файла: <span className={s.gridItemMainData}>{toKilobyte(props.filesize)}</span></p>
                 <p className={s.gridItemData}>Дата: <span className={s.gridItemMainData}>{toDate(props.timestamp)}</span></p>
-                <p className={s.gridItemData}>Категория: <span className={s.gridItemMainData}>{props.category}</span></p>
+                <p className={s.gridItemData}>Категория: <span className={s.gridItemMainData}>{props.category[0].name}</span></p>
             </div>
         </div>
     );
